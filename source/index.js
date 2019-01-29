@@ -1,3 +1,4 @@
-import Demo from './Demo.vue'
+import formatTime from './formatTime'
+import { isIdcard, isMobile } from './validate'
 
-export { Demo }
+export { formatTime, isIdcard, isMobile }
