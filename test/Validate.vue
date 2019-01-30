@@ -1,12 +1,11 @@
 <template>
-    <div></div>
+    <div>
+        <div></div>
+    </div>
 </template>
 
 <script>
-// import * as xiaogou from '../dist/bai-util.umd.js'
-import { isIdcard, isMobile, isNumber } from 'bai-util'
-// import * as xiaogou from '../source/index.js'
-// const xiaogou = require('../dist/bai-util.umd.js')
+import { isIdcard, isMobile, isNumber } from '../source/index.js'
 
 export default {
     name: 'Validate',
@@ -25,7 +24,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.a {
-}
-</style>
+<style lang="scss" scoped></style>
