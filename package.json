@@ -5,7 +5,7 @@
     "main": "./dist/bai-util.umd.min.js",
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build --target lib --name bai-util ./lib/index.js",
+        "build": "vue-cli-service build --target lib --name bai-util ./source/index.js",
         "lint": "vue-cli-service lint",
         "start": "npm run serve"
     },

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import Main from './Main'
 import Validate from './Validate'
+import Format from './Format'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,10 @@ export const routes = [
     {
         path: '/validate',
         component: Validate,
+    },
+    {
+        path: '/format',
+        component: Format,
     },
 ]
 

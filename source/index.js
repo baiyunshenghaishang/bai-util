@@ -1,4 +1,4 @@
-import formatTime from './formatTime'
-import { isIdcard, isMobile } from './validate'
+import { formatTime } from './format'
+import { isIdcard, isMobile, isNumber, isEmail } from './validate'
 
-export { formatTime, isIdcard, isMobile }
+export { formatTime, isIdcard, isMobile, isNumber, isEmail }

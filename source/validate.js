@@ -70,20 +70,25 @@ export const isIdcard = code => {
 }
 
 export const isMobile = mobile => {
-    if (typeof mobile !== 'string' || typeof mobile !== 'number') return false
+    if (typeof mobile !== 'string' && typeof mobile !== 'number') return false
     let strMobile = String(mobile)
     if (strMobile.length !== 11) return false
     let regex = /^1\d{10}$/
-    if (!regex.test(strMobile)) return false
-    return true
+    return regex.test(strMobile)
 }
 
 export const isNumber = num => {
-    if (typeof num === 'number') return true
-    if (typeof num !== 'string') return false
-    return true
+    if (typeof num !== 'string' && typeof num !== 'number') return false
+    if (num === '') return false
+    return !isNaN(num)
+    // if (typeof num === 'number') return true
+    // if (typeof num !== 'string') return false
+    // let regex1 = /^[1-9]\d*(\.\d+)?$/,
+    //     regex2 = /^0(\.\d+)?$/
+    // return regex1.test(num) || regex2.test(num)
 }
 
 export const isEmail = email => {
-    return email
+    let regex = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+    return regex.test(email)
 }
