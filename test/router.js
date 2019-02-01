@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Main from './Main'
 import Validate from './Validate'
 import Format from './Format'
+import Query from './Query'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,10 @@ export const routes = [
     {
         path: '/format',
         component: Format,
+    },
+    {
+        path: '/query',
+        component: Query,
     },
 ]
 

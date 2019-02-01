@@ -1,4 +1,4 @@
-export const isIdcard = code => {
+export function isIdcard(code) {
     if (typeof code !== 'string') return false
     if (code.length < 15) return false
     let city = {
@@ -69,7 +69,7 @@ export const isIdcard = code => {
     return true
 }
 
-export const isMobile = mobile => {
+export function isMobile(mobile) {
     if (typeof mobile !== 'string' && typeof mobile !== 'number') return false
     let strMobile = String(mobile)
     if (strMobile.length !== 11) return false
@@ -77,7 +77,7 @@ export const isMobile = mobile => {
     return regex.test(strMobile)
 }
 
-export const isNumber = num => {
+export function isNumber(num) {
     if (typeof num !== 'string' && typeof num !== 'number') return false
     if (num === '') return false
     return !isNaN(num)
@@ -88,7 +88,7 @@ export const isNumber = num => {
     // return regex1.test(num) || regex2.test(num)
 }
 
-export const isEmail = email => {
+export function isEmail(email) {
     let regex = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
     return regex.test(email)
 }
