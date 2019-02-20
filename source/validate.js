@@ -81,11 +81,6 @@ export function isNumber(num) {
     if (typeof num !== 'string' && typeof num !== 'number') return false
     if (num === '') return false
     return !isNaN(num)
-    // if (typeof num === 'number') return true
-    // if (typeof num !== 'string') return false
-    // let regex1 = /^[1-9]\d*(\.\d+)?$/,
-    //     regex2 = /^0(\.\d+)?$/
-    // return regex1.test(num) || regex2.test(num)
 }
 
 export function isEmail(email) {
