@@ -1,6 +1,6 @@
 let cacheQueryObj = {},
     cacheUrl = ''
-export function getQuery(name, url = window.location.search) {
+export function getQuery(name = '', url = window.location.search) {
     if (typeof name !== 'string' || typeof url !== 'string') return ''
     let obj = getQueryObj(url)
     cacheQueryObj = obj
